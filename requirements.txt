@@ -1,0 +1,4 @@
+# This file is used to install the required packages for the project.
+
+boto3==1.28.0
+requests==2.32.3
