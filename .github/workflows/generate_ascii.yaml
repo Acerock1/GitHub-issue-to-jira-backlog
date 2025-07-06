@@ -10,4 +10,11 @@ jobs:
             - name: Using script
               run: |
                 chmod 777 script.sh 
-                ./script.sh
+    second-job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: place-holder
+          run: |
+            sudo apt-get tree
+            pwd
+            tree .
