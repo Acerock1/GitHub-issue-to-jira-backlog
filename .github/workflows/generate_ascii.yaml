@@ -7,11 +7,5 @@ jobs:
         steps:
             - name: Checkout repo
               uses: actions/checkout@v4.2.2
-            - name: Install Dependencies
-              run: |
-                sudo apt-get install cowsay -y
-                sudo apt-get install tree -y
-            - name: Generate Ascii Output
-              run: cowsay -f dragon "my name is daenerys targaryen and my favorite dragon is DRogon" >> a-joke.txt
-            - name: Test file exists
-              run: grep -i "dragon" a-joke.txt
+            - name: Using script
+              run: bash script.sh
