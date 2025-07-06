@@ -12,6 +12,6 @@ jobs:
                 sudo apt-get install cowsay -y
                 sudo apt-get install tree -y
             - name: Generate Ascii Output
-              uses: cowsay -f dragon "my name is daenerys targaryen and my favorite dragon is DRogon" >> a-joke.txt
+              run: cowsay -f dragon "my name is daenerys targaryen and my favorite dragon is DRogon" >> a-joke.txt
             - name: Test file exists
               run: grep -i "joke" a-joke.txt

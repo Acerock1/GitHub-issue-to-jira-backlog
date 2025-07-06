@@ -15,4 +15,4 @@ jobs:
                 ls -la
                 cat get_secrets.py
             - name: Generate Ascii Output
-              uses: cowsay -f dragon "my name is daenerys targaryen and my favorite dragon is DRogon" >> a-joke.txt
+              run: cowsay -f dragon "my name is daenerys targaryen and my favorite dragon is DRogon" >> a-joke.txt
