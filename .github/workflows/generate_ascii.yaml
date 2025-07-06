@@ -25,3 +25,7 @@ jobs:
             sudo apt-get install tree
             pwd
             tree .
+        - name: download dragon.txt
+          uses: actions/download-artifact@v4
+          with:
+            name: dragon-text-file
