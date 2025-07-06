@@ -1,4 +1,4 @@
-name: sample workflow
+name: first workflow
 on: [push, fork]
 
 jobs:

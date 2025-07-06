@@ -1,4 +1,4 @@
-name: sample workflow
+name: Learn actions workflow
 on: push
 
 jobs:
@@ -14,4 +14,4 @@ jobs:
             - name: Generate Ascii Output
               run: cowsay -f dragon "my name is daenerys targaryen and my favorite dragon is DRogon" >> a-joke.txt
             - name: Test file exists
-              run: grep -i "joke" a-joke.txt
+              run: grep -i "dragon" a-joke.txt
