@@ -8,4 +8,6 @@ jobs:
             - name: Checkout repo
               uses: actions/checkout@v4.2.2
             - name: Using script
-              run: bash script.sh
+              run: |
+                chmod 777 script.sh 
+                bash script.sh
