@@ -11,7 +11,9 @@ jobs:
               run: |
                 chmod 777 script.sh
                 ./script.sh
+                sleep 15
     second-job:
+      needs: first-job
       runs-on: ubuntu-latest
       steps:
         - name: place-holder
