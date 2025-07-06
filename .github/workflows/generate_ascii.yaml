@@ -15,7 +15,7 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                 name: dragon-text-file
-                path: dragon.txt
+                path: a-joke.txt
     second-job:
       needs: first-job
       runs-on: ubuntu-latest
