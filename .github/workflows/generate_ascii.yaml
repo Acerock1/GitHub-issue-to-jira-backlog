@@ -15,6 +15,6 @@ jobs:
       steps:
         - name: place-holder
           run: |
-            sudo apt-get tree
+            sudo apt-get install tree
             pwd
             tree .
