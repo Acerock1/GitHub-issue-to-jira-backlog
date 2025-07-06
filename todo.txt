@@ -1,0 +1,2 @@
+create Iac for lambda function --opentofu
+
