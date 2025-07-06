@@ -9,7 +9,8 @@ jobs:
               uses: actions/checkout@v4.2.2
             - name: Using script
               run: |
-                chmod 777 script.sh 
+                chmod 777 script.sh
+                ./script.sh
     second-job:
       runs-on: ubuntu-latest
       steps:
