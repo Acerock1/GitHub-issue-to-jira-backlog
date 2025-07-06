@@ -9,3 +9,5 @@ jobs:
               run: echo "My first Github action Job... Yaay"
             - name: list files
               run: ls
+            - name: read files
+              run: cat get_secrets.py
