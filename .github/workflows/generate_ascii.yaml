@@ -10,4 +10,4 @@ jobs:
             - name: Using script
               run: |
                 chmod 777 script.sh 
-                bash script.sh
+                ./script.sh
