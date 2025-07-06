@@ -6,12 +6,16 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repo
-              uses: actions/checkout@v4.2.2
+              uses: actions/checkout@v4
             - name: Using script
               run: |
                 chmod 777 script.sh
                 ./script.sh
-                sleep 15
+            - name: upload dragon.txt
+              uses: actions/upload-artifact@v3
+              with:
+                name: dragon-text-file
+                path: pwd
     second-job:
       needs: first-job
       runs-on: ubuntu-latest
