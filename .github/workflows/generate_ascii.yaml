@@ -1,0 +1,17 @@
+name: sample workflow
+on: push
+
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v4.2.2
+            - name: Install Dependencies
+              run: |
+                sudo apt-get install cowsay -y
+                sudo apt-get install tree -y
+            - name: Generate Ascii Output
+              uses: cowsay -f dragon "my name is daenerys targaryen and my favorite dragon is DRogon" >> a-joke.txt
+            - name: Test file exists
+              run: grep -i "joke" a-joke.txt
